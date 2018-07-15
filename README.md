@@ -12,7 +12,7 @@ The mappings are--
 
 You can, of course, change this mapping at your will.
 
-## Installation
+## Installation:
 
 Using [Vundle](https://github.com/VundleVim/Vundle.vim)
 
