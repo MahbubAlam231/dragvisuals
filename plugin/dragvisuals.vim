@@ -1,7 +1,7 @@
-" Vim global plugin for dragging virtual blocks
-" Last change: Tue Jul 24 07:19:35 EST 2012
-" Maintainer:	Damian Conway
-" License:	This file is placed in the public domain.
+" Maintainer  :	Damian Conway/Mahbub Alam
+" License     :	This file is placed in the public domain.
+" Version     :	1.1.1
+" Description :	Vim global plugin for dragging virtual blocks
 
 "#########################################################################
 "##                                                                     ##
