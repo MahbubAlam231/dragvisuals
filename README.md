@@ -10,7 +10,7 @@ The mappings are--
     vmap <expr> <S-UP>    DVB_Drag('up')
     vmap <expr> D         DVB_Duplicate()
 
-You can, of course, change this mappings at your will.
+You can, of course, change this mapping at your will.
 
 ## Installation
 
