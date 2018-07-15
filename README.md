@@ -11,3 +11,10 @@ The mappings are--
     vmap <expr> D         DVB_Duplicate()
 
 You can, of course, change this mappings at your will.
+
+## Installation
+
+Using [Vundle](https://github.com/VundleVim/Vundle.vim).
+
+1. Add `Plugin 'MahbubAlam/hybridlinenumber` to your `.vimrc`
+2. Run `PluginInstall`
