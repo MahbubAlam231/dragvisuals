@@ -1,7 +1,7 @@
 # dragvisuals
-Plugin for dragging visual blocks by Damian Conway. Have a look at his [YouTube presentation](https://www.youtube.com/watch?v=aHm36-na4-4) or at this [link](https://is.gd/IBV2013).
+Plugin for dragging visual selection by Damian Conway. Have a look at his [YouTube presentation](https://www.youtube.com/watch?v=aHm36-na4-4) or at this [link](https://is.gd/IBV2013).
 
-You can drag and duplicate visual blocks using this plugin, which is useful at times and is better than copying and pasting.
+You can drag and duplicate visual selection using this plugin, which is useful at times and is better than copying and pasting.
 Put these following mappings in your `.vimrc`--
 
     vmap <expr> <S-LEFT>  DVB_Drag('left')
