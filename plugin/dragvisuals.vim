@@ -3,11 +3,11 @@
 " Version     :	1.1.1
 " Description :	Vim global plugin for dragging virtual blocks
 
+" Mappings{{{
+
 "#########################################################################
 "##                                                                     ##
 "##  Add the following (uncommented) to your .vimrc...                  ##
-"##                                                                     ##
-"##     runtime plugin/dragvisuals.vim                                  ##
 "##                                                                     ##
 "##     vmap  <expr>  <LEFT>   DVB_Drag('left')                         ##
 "##     vmap  <expr>  <RIGHT>  DVB_Drag('right')                        ##
@@ -42,6 +42,7 @@
 "##                                                                     ##
 "#########################################################################
 
+"}}}
 
 " If already loaded, we're done...
 if exists("loaded_dragvirtualblocks")
@@ -60,6 +61,7 @@ if !exists('g:DVB_TrimWS')
     let g:DVB_TrimWS = 1
 endif
 
+" DVB_Drag{{{
 function! DVB_Drag (dir)
     " No-op in Visual mode...
     if mode() ==# 'v'
@@ -85,7 +87,9 @@ function! DVB_Drag (dir)
     endif
 endfunction
 
-" Duplicate selected block and place to the right...
+"}}}
+
+" Duplicate selected block and place to the right...{{{
 function! DVB_Duplicate ()
     exec "nnoremap <silent><expr><buffer>  M  \<SID>DuplicateBlock()"
     return '"vyM'
@@ -117,13 +121,13 @@ function! s:DuplicateBlock ()
         \. (dollar_block ? 'o$' : '')
 endfunction
 
+"}}}
 
 " Kludge to hide change reporting inside implementation...
 let s:NO_REPORT   = ":let b:DVB_report=&report\<CR>:let &report=1000000000\<CR>"
 let s:PREV_REPORT = ":let &report = b:DVB_report\<CR>"
 
-
-" Drag in specified direction in Visual Line mode...
+" Drag in specified direction in Visual Line mode...{{{
 function! s:Drag_Lines (dir)
     " Clean up the temporary convenience...
     nunmap <buffer>  M
@@ -208,7 +212,9 @@ function! s:Drag_Lines (dir)
     endif
 endfunction
 
-" Drag in specified direction in Visual Block mode...
+"}}}
+
+" Drag in specified direction in Visual Block mode...{{{
 function! s:Drag_Block (dir)
     " Clean up the temporary convenience...
     nunmap <buffer>  M
@@ -339,6 +345,7 @@ function! s:Drag_Block (dir)
     endif
 endfunction
 
+"}}}
 
 " Restore previous external compatibility options
 let &cpo = s:save_cpo
