@@ -10,7 +10,9 @@ Put these following mappings in your `.vimrc`--
     vmap <expr> <S-UP>    DVB_Drag('up')
     vmap <expr> D         DVB_Duplicate()
 
-You can, of course, change this mapping at your will.
+You can, of course, change this mapping at your will. Also add the following to your `.vimrc` to remove any introduced trailing whitespace after moving visual blocks/lines --
+
+    let g:DVB_TrimWS = 1
 
 ## Installation:
 
