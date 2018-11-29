@@ -18,5 +18,5 @@ You can, of course, change this mapping at your will. Also add the following to 
 
 Using [Vundle](https://github.com/VundleVim/Vundle.vim)
 
-1. Add `Plugin 'MahbubAlam/hybridlinenumber` to your `.vimrc`
+1. Add `Plugin 'MahbubAlam231/dragvisuals` to your `.vimrc`
 2. Run `PluginInstall`
